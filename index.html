@@ -1,0 +1,73 @@
+<!DOCTYPE >
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Manipulating the DOM</title>
+  <!-- Load Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">  <!-- Load Styles -->
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <!-- HTML Follows BEM naming conventions 
+  IDs are only used for sections to connect menu achors to sections -->
+  <header class="page__header">
+    <nav class="navbar__menu">
+      <!-- Navigation starts as empty UL that will be populated with JS -->
+      <ul id="navbar__list"></ul>
+    </nav>
+  </header>
+  <main>
+    <header class="main__hero">
+      <h1>Landing Page </h1>
+    </header>
+    <!-- Each Section has an ID (used for the anchor) and 
+    a data attribute that will populate the li node.
+    Adding more sections will automatically populate nav.
+    The first section is set to active class by default -->
+    <section id="section1" data-nav="Section 1" class="active">
+      <div class="landing__container">
+        <h2>Section 1</h2>
+       <p>Albert Einstein, (born March 14, 1879, Ulm, Württemberg, Germany—died April 18, 1955, Princeton, New Jersey, U.S.), German-born physicist who developed the special and general theories of relativity and won the Nobel Prize for Physics in 1921 for his explanation of the photoelectric effect. Einstein is generally considered the most influential physicist of the 20th century.</p>
+       <p>Einstein would write that two “wonders” deeply affected his early years. The first was his encounter with a compass at age five. He was mystified that invisible forces could deflect the needle. This would lead to a lifelong fascination with invisible forces. The second wonder came at age 12 when he discovered a book of geometry, which he devoured, calling it his “sacred little geometry book.”</p>
+        <!-- Create Button to Go Back The Top Page -->
+        <button class="top_btn">Go To The Top</button>
+      </div>
+    </section>
+    <section id="section2" data-nav="Section 2">
+      <div class="landing__container">
+        <h2>Section 2</h2>
+        <p>Isaac Newton, in full Sir Isaac Newton, (born December 25, 1642 [January 4, 1643, New Style], Woolsthorpe, Lincolnshire, England—died March 20 [March 31], 1727, London), English physicist and mathematician, who was the culminating figure of the Scientific Revolution of the 17th century. In optics, his discovery of the composition of white light integrated the phenomena of colours into the science of light and laid the foundation for modern physical optics. </p>
+        <p>When Newton arrived in Cambridge in 1661, the movement now known as the Scientific Revolution was well advanced, and many of the works basic to modern science had appeared. Astronomers from Nicolaus Copernicus to Johannes Kepler had elaborated the heliocentric system of the universe.</p>
+        <!-- Create Button to Go Back The Top Page -->
+        <button class="top_btn">Go To The Top</button>
+      </div>
+    </section>
+    <section id="section3" data-nav="Section 3">
+      <div class="landing__container">
+        <h2>Section 3</h2>
+        <p>Michael Faraday, (born September 22, 1791, Newington, Surrey, England—died August 25, 1867, Hampton Court, Surrey), English physicist and chemist whose many experiments contributed greatly to the understanding of electromagnetism.</p>
+        <P>Michael Faraday was born in the country village of Newington, Surrey, now a part of South London. His father was a blacksmith who had migrated from the north of England earlier in 1791 to look for work. His mother was a country woman of great calm and wisdom who supported her son emotionally through a difficult childhood.</P>
+        <!-- Create Button to Go Back The Top Page -->
+        <button class="top_btn">Go To The Top</button>
+      </div>
+    </section>
+    <!-- Create Fourth Section -->
+    <section id="sction4" data-nav="Section 4">
+      <div class="landing__container">
+        <h2>Section 4</h2>
+        <P>Richard Feynman, in full Richard Phillips Feynman, (born May 11, 1918, New York, U.S.—died  February 15, 1988, Los Angeles, California), American theoretical physicist who was widely regarded as the most brilliant, influential, and iconoclastic figure in his field in the post-World War II era.</P>
+        <P>Born in the Far Rockaway section of New York City, Feynman was the descendant of Russian and Polish Jews who had immigrated to the United States late in the 19th century. He studied physics at the Massachusetts Institute of Technology, where his undergraduate thesis (1939) proposed an original and enduring approach to calculating forces in molecules.</P>
+        <!-- Create Button to Go Back The Top Page -->
+        <button class="top_btn">Go To The Top</button>
+      </div>
+    </section>
+  </main>
+  <footer class="page__footer">
+    <p>&copy Udacity</p>
+  </footer>
+<!-- Recall JavaScript file -->
+<script src="js/app.js"></script>
+</body>
+</html>
